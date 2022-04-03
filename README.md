@@ -16,3 +16,6 @@ Bounding Boxes: Some datasets provide bounding boxes and some provide masks only
 To validate this approach, we compared our computed bounding boxes to those provided by the COCO dataset. We found that ~2% of bounding boxes differed by 1px or more, ~0.05% differed by 5px or more, and only 0.01% differed by 10px or more.
 
 Learning Rate: It might be related to differences between how Caffe and TensorFlow compute gradients (sum vs mean across batches and GPUs). Or, maybe the official model uses gradient clipping to avoid this issue. We do use gradient clipping, but don't set it too aggressively. We found that smaller learning rates converge faster anyway so we go with that.
+
+
+https://youtu.be/egft8JbNKJE
